@@ -1,4 +1,4 @@
-<?php
+c<?php
   $errors = '';
 $myemail = 'jaswebmates@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
@@ -46,7 +46,7 @@ mail($to,$email_subject,$email_body,$headers);
 
 //redirect to the 'thank you' page
 
-header('Location: contact.html');
+header('Location: contact-us-recaptcha.html');
 
 }
 
