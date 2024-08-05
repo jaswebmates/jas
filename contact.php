@@ -1,4 +1,4 @@
-c<?php
+<?php
   $errors = '';
 $myemail = 'jaswebmates@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
