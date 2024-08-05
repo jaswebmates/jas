@@ -1,18 +1,18 @@
 <?php
   $errors = '';
 $myemail = 'jaswebmates@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['phone']) ||
-   empty($_POST['message']))
+if(empty($_GET['name'])  || 
+   empty($_GET['email']) || 
+   empty($_GET['phone']) ||
+   empty($_GET['message']))
 {
     $errors .= "\n Error: all fields are required";
 }
 
-$name = $_POST['name']; 
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message']; 
+$name = $_GET['name']; 
+$email_address = $_GET['email'];
+$phone = $_GET['phone'];
+$message = $_GET['message']; 
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
